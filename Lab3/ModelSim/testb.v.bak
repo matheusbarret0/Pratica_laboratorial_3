@@ -1,0 +1,61 @@
+module tb_gerador_sinais();
+
+reg clk = 0; // sinal de clock
+reg reset = 0; // sinal de reset
+reg [1:0] select_signal; // portas de seleção de sinal
+reg [3:0] bit_width = 12; // número de bits do sinal gerado
+wire [15:0] out; // sinal de saída
+
+gerador_sinais uut(
+  .clk(clk),
+  .reset(reset),
+  .select_signal(select_signal),
+  .bit_width(bit_width),
+  .out(out)
+);
+
+initial begin
+  $dumpfile("gerador_sinais.vcd"); // arquivo para salvar os sinais gerados
+  $dumpvars(0, tb_gerador_sinais); // seleciona todas as variáveis do testbench para salvar
+
+  // teste da onda quadrada
+  select_signal = 2'b00;
+  #100 reset = 1; // ativa o reset
+  #100 reset = 0; // desativa o reset
+  #100;
+  for (int i = 0; i < 10; i = i + 1) begin // gera 10 pulsos na porta de seleção de sinal
+    select_signal = select_signal + 1;
+    #100;
+  end
+
+  // teste da onda triangular
+  select_signal = 2'b00;
+  #100 reset = 1;
+  #100 reset = 0;
+  #100;
+  select_signal = 2'b01;
+  #200 select_signal = 2'b00; // gera um ciclo completo da onda triangular
+  #200 select_signal = 2'b01;
+  #200 select_signal = 2'b00;
+  #200 select_signal = 2'b01;
+  #200 select_signal = 2'b00;
+
+  // teste da onda dente de serra
+  select_signal = 2'b00;
+  #100 reset = 1;
+  #100 reset = 0;
+  #100;
+  select_signal = 2'b10;
+  #200 select_signal = 2'b00; // gera um ciclo completo da onda dente de serra
+  #200 select_signal = 2'b10;
+  #200 select_signal = 2'b00;
+  #200 select_signal = 2'b10;
+  #200 select_signal = 2'b00;
+
+   // finaliza a simulação
+end
+
+always #5 clk = ~clk; // gera o sinal de clock com frequência de 10 MHz
+
+endmodule
+

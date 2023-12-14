@@ -1,0 +1,32 @@
+C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/ds_1.v {0 {vlog -work work -stats=none C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/ds_1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module gerador_de_sinais
+** Error: C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/ds_1.v(44): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+
+} {4.0 5.0} {}} C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/quadrada.v {1 {vlog -work work -stats=none C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/quadrada.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module gerador_onda_quadrada
+
+Top level modules:
+	gerador_onda_quadrada
+
+} {} {}} C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/trangular.v {0 {vlog -work work -stats=none C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/trangular.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module gerador_onda_triangular
+** Error: C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/trangular.v(15): (vlog-2730) Undefined variable: 'down'.
+
+} {4.0 5.0} {}} C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/testb.v {1 {vlog -work work -stats=none C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/testb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_gerador_de_sinais
+
+Top level modules:
+	tb_gerador_de_sinais
+
+} {} {}} C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/dentedeserra.v {1 {vlog -work work -stats=none C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/dentedeserra.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module gerador_onda_dente_de_serra
+
+Top level modules:
+	gerador_onda_dente_de_serra
+
+} {} {}}

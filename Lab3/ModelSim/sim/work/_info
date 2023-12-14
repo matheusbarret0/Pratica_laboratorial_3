@@ -1,0 +1,126 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/sim
+vdetect_seg
+Z1 !s110 1684162546
+!i10b 1
+!s100 2Do:BV52MJ;c>dBkd8li^2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IiNcUY7cTPj84iVK@S6:BK0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1680702362
+8../ds_decseq.v
+F../ds_decseq.v
+!i122 1
+L0 1 83
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1684162546.000000
+!s107 ../trangular.v|../testb.v|../quadrada.v|../ds_decseq.v|../ds_1.v|../dentedeserra.v|
+Z6 !s90 -nolock|../dentedeserra.v|../ds_1.v|../ds_decseq.v|../quadrada.v|../testb.v|../trangular.v|
+!i113 1
+Z7 o-nolock
+Z8 tCvgOpt 0
+vdetect_tb
+R1
+!i10b 1
+!s100 b]WXCa=o=NV0=KgHm;VW60
+R2
+IoZSMThlV?hf@62nShkkNI2
+R3
+R0
+w1680701623
+8../tb/tb.v
+F../tb/tb.v
+!i122 0
+L0 1 80
+R4
+r1
+!s85 0
+31
+!s108 1684162545.000000
+!s107 ../tb/tb.v|
+!s90 -nolock|../tb/tb.v|
+!i113 1
+R7
+R8
+vgerador_onda_dente_de_serra
+R1
+!i10b 1
+!s100 BB=f6DOS[QdkQ>n21jmOa2
+R2
+IJ4=]3j7T9Gf=zKV;mJ5>z2
+R3
+R0
+w1682875759
+8../dentedeserra.v
+F../dentedeserra.v
+!i122 1
+L0 1 21
+R4
+r1
+!s85 0
+31
+R5
+Z9 !s107 ../trangular.v|../testb.v|../quadrada.v|../ds_decseq.v|../ds_1.v|../dentedeserra.v|
+R6
+!i113 1
+R7
+R8
+vgerador_onda_quadrada
+R1
+!i10b 1
+!s100 Hh>K@d8TmI=OgSja>Q]:C0
+R2
+I1LaoPflBd8:X`kVG26P1f2
+R3
+R0
+w1682875723
+8../quadrada.v
+F../quadrada.v
+!i122 1
+L0 2 24
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+vtb_gerador_de_sinais
+R1
+!i10b 1
+!s100 dR^2:h[SU2cE_CRkf83H93
+R2
+I7??HQ:docVl2e9Z6^QkYW1
+R3
+R0
+w1682875790
+8../testb.v
+F../testb.v
+!i122 1
+L0 1 33
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8

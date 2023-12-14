@@ -1,0 +1,53 @@
+module gerador_sinais(
+  input clk, // sinal de clock
+  input reset, // sinal de reset
+  input [1:0] select_signal, // portas de seleção de sinal
+  input [3:0] bit_width, // número de bits do sinal gerado
+  output reg [15:0] out // sinal de saída
+);
+
+reg [15:0] count_tri; // contador de ciclos para a onda triangular
+reg [15:0] count_saw; // contador de ciclos para a onda dente de serra
+reg [15:0] count_max; // valor máximo do contador de ciclos para ajustar a frequência do sinal
+reg [15:0] wave; // sinal gerado (quadrado, triangular ou dente de serra)
+reg [15:0] wave_temp; // sinal temporário usado para gerar a onda triangular e dente de serra
+reg [15:0] max_value; // valor máximo do sinal gerado (baseado no número de bits)
+
+parameter SQUARE_WAVE = 2'b00; // código para selecionar onda quadrada
+parameter TRIANGULAR_WAVE = 2'b01; // código para selecionar onda triangular
+parameter SAWTOOTH_WAVE = 2'b10; // código para selecionar onda dente de serra
+
+always @(*) begin
+  case (select_signal)
+    SQUARE_WAVE: begin
+      wave <= {bit_width-1{1'b1}, 1'b0}; // onda quadrada com valor 1 em metade dos ciclos
+    end
+    TRIANGULAR_WAVE: begin
+      if (count_tri <= count_max/2) begin // primeira metade do ciclo
+        wave_temp <= (count_tri * max_value) / (count_max/2); // crescente
+      end else begin // segunda metade do ciclo
+        wave_temp <= ((count_max - count_tri) * max_value) / (count_max/2); // decrescente
+      end
+      wave <= {wave_temp, bit_width-1{1'b0}}; // adiciona zeros à esquerda para ajustar o número de bits
+    end
+    SAWTOOTH_WAVE: begin
+      wave_temp <= (count_saw * max_value) / count_max; // sinal dente de serra
+      wave <= {wave_temp, bit_width-1{1'b0}}; // adiciona zeros à esquerda para ajustar o número de bits
+    end
+    default: wave <= 0; // valor padrão para portas de seleção inválidas
+  endcase
+end
+
+always @(posedge clk or posedge reset) begin
+  if (reset) begin
+    count_tri <= 0;
+    count_saw <= 0;
+    count_max <= 0;
+    wave <= 0;
+    max_value <= (1 << bit_width) - 1; // calcula o valor máximo com base no número de bits
+    out <= 0;
+  end else begin
+    if (count_max == 0) begin
+      count_max <= (1 << 16) - 1; // valor máximo do contador de ciclos
+   
+

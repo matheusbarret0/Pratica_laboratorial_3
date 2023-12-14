@@ -1,0 +1,103 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim
+vgerador_onda_dente_de_serra
+Z1 !s110 1682876218
+!i10b 1
+!s100 BB=f6DOS[QdkQ>n21jmOa2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1]<Kf^Am=3:kiRn1T:HZD1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1682875759
+8C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/dentedeserra.v
+FC:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/dentedeserra.v
+!i122 11
+L0 1 21
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1682876218.000000
+!s107 C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/dentedeserra.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/dentedeserra.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vgerador_onda_quadrada
+R1
+!i10b 1
+!s100 Hh>K@d8TmI=OgSja>Q]:C0
+R2
+Ib1:aoh3@ceS_za9?B?XUh0
+R3
+R0
+w1682875723
+8C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/quadrada.v
+FC:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/quadrada.v
+!i122 10
+L0 2 24
+R4
+r1
+!s85 0
+31
+Z7 !s108 1682876217.000000
+!s107 C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/quadrada.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/quadrada.v|
+!i113 1
+R5
+R6
+vtb_gerador_de_sinais
+!s110 1682876217
+!i10b 1
+!s100 dR^2:h[SU2cE_CRkf83H93
+R2
+I5KD5U4?TQ:<zaC@g:7m_32
+R3
+R0
+w1682875790
+Z8 8C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/testb.v
+Z9 FC:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/testb.v
+!i122 9
+L0 1 33
+R4
+r1
+!s85 0
+31
+R7
+Z10 !s107 C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/testb.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/testb.v|
+!i113 1
+R5
+R6
+vtestbench
+!s110 1682874235
+!i10b 1
+!s100 JVJfeG3Jzi4Klfl2:[`?m3
+R2
+IRmbTm@CeYE>chJ^4gF9=>2
+R3
+R0
+w1682874232
+R8
+R9
+!i122 2
+L0 1 27
+R4
+r1
+!s85 0
+31
+!s108 1682874234.000000
+R10
+R11
+!i113 1
+R5
+R6

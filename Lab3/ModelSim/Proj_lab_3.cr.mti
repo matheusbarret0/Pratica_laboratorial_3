@@ -1,0 +1,15 @@
+C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/ds_decseq.v {1 {vlog -work work -stats=none C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/ds_decseq.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module detect_seg
+
+Top level modules:
+	detect_seg
+
+} {} {}} C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/tb.v {1 {vlog -work work -stats=none C:/Users/mathe/OneDrive/Documentos/Projetos/Lab3/ModelSim/tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module detect_tb
+
+Top level modules:
+	detect_tb
+
+} {} {}}
